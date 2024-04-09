@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" >
+        <label for="fromUnit">FROM:</label>
+        <select id="fromUnit">
+            <option></option>
+            <option value="celsius">CELCUS</option>
+            <option value="fahrenheit">FAHRENHEIT</option>
+            <option value="kelvin">KELVIN</option>
+        </select>
+        <br>
+        <br>
+        <div>
+        <label for="toUnit">CONVERT TO:</label>
+        <select id="toUnit">
+            <option></option>
+            <option value="celsius">CELCUS</option>
+            <option value="fahrenheit">FAHRENHEIT</option>
+            <option value="kelvin">KELVIN</option>
+        </select>
+        </div>
+        <br>
+        <label for="tempInput">Input:</label>
+        <input type="number" id="tempInput" placeholder="Enter ">
+            <button onclick="convertTemperature()">Convert</button>
+            <div id="result"></div>
+            <script src="function.js"></script>
+    </div>
+</body>
+</html>
